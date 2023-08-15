@@ -1,0 +1,17 @@
+/* global.css */
+ 
+html::-webkit-scrollbar {
+  width: 5px;
+}
+
+html::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: #e68888;
+  border: 1px solid #6612cc;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: red;
+  background-image: linear-gradient(to bottom right,#4d1601,rgb(207, 68, 41));;
+}
