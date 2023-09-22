@@ -6,6 +6,8 @@ import Header from './components/Layout/Header/Header';
 import Meals from './components/Meals/Meals';
 import Cart from './components/Cart/Cart';
 import CartProvider from './store/cartProvider';
+import LoginPage from './components/authentication/LoginPage';
+import Signup from './components/authentication/Signup';
 function App() {
   const[cartIsShown,setCartIsShown]=useState(false);
 
@@ -19,6 +21,7 @@ function App() {
   return (
   
     <Fragment >
+
     <CartProvider>
       <Header  showCartHandler={showCartHandler}/>
     {cartIsShown && <Cart hideCartHandler={hideCartHandler}/>}

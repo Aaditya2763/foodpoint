@@ -27,7 +27,7 @@ const CartItem = (props) => {
 
       <div className={classes.actions}>
         <div className={classes.actionsBtn}>
-          <button onClick={props.onDecrease} className={isvalidAmount ? classes.validateBtn : ""}>−</button>
+          <button onClick={props.onDecrease}>-</button>
           <button onClick={props.onIncrease}>+</button>
         </div>
         <div className={classes.removeBtn} onClick={props.onRemove}>Remove</div>
